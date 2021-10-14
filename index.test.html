@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Unit Tested Game</title>
+    <link rel="stylesheet" href="qunit/qunit-2.11.3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+  section {
+      padding: 1rem;
+      border: solid #999999 thin;
+      border-left: solid #999999 1rem;
+  }
+
+  .done {
+      border-color: #990099;
+  }
+
+</style>
+
+<body>
+    <div id="qunit">
+    </div>
+
+    <canvas id=c1 width="100" height="100" >
+      <p>Sorry, you need a newer browser to see this content.</p>
+    </canvas>
+
+    <div id=player class="panel hidden">
+      <h1>Player</h1>
+      <input id=nick width=14 placeholder=Nick></p>
+      <button id=play>Play</input></p>
+
+    </div>
+
+    <div id=leaderboard class="panel hidden">
+      <h1>Leaderboard</h1>
+      <ol id=top10>
+        <li>Leader</li>
+        <li>Second place</li>
+        <li class="myself">Third</li>
+        <li>etc.</li>
+        <li>etc.</li>
+        <li>etc.</li>
+        <li>etc.</li>
+      </ol>
+    </div>
+
+
+    <div id=controls class="controls panel hidden">
+      <h1>Debug</h1>
+      <p>Scale <input id=scalenumber type=number min=4 max=99 value=64 step=1></input></p>
+      <p>
+      <input id=scalerange min=4 max=99 value=64 step=1 type=range></input>
+      </p>
+
+      <p>Mouse X: <span id=mx>0</span></p>
+      <p>Mouse Y: <span id=my>0</span></p>
+      <p>Offset X: <span id=ox>0</span></p>
+      <p>Offset Y: <span id=oy>0</span></p>
+      <p>Angle: <span id=angle>0</span> (deg: <span id=degrees>0</span>°)</p>
+      <p>Radius: <span id=radius>0</span></p>
+      <p>Grid Vert: <span id=gv>0</span></p>
+      <p>Grid Horiz: <span id=gh>0</span></p>
+      <p>Loops: <span id=loops>0</span></p>
+    </div>
+
+    <div id=hint>
+      <p>Keys: <b>D</b>ebug, <b>P</b>layer, <b>L</b>eaderboard</p>
+    </div>
+
+    <h1 id=playername>Player 1</h1>
+
+    <script src="qunit/qunit-2.11.3.js"></script>
+    <script src="qunit/qunit-ext.js"></script>
+    <script src="test.js"></script>
+    <script src="lib.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

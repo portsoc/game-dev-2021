@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: sans-serif;
+}
+
+.lovely {
+    background: #FDFDFD;
+    color: rgba(255,127,0,0.5);
+}
+
+canvas {
+  cursor: crosshair;
+}
+
+body > * {
+  display: block;
+}
+
+
+.myself {
+  color: #F70;
+}
+
+.panel {
+  font-size: 1.5vmin;
+  background: rgba(100,100,100,0.6);
+  color: #fff;
+  padding: 1em 2em;
+  position: fixed;
+  line-height: 140%;
+}
+
+.panel h1 {
+  padding-bottom: 1vmin;
+}
+
+
+#controls {
+  top: 2vmin;
+  left: 2vmin;
+  width: 20vmin;
+}
+
+#leaderboard {
+  display: block;
+  top: 2vmin;
+  right: 2vmin;
+  width: 18vmin;
+  text-align: center;
+}
+
+#player {
+  display: block;
+  top: 30vmin;
+  bottom: 30vmin;
+  left: 30vmin;
+  right: 30vmin;
+  text-align: center;
+}
+
+#player>* {
+  display: block;
+  border: none;
+  padding: 2vmin;
+  border: none;
+  border-radius: 1vmin;
+  font-size: 150%;
+  font-weight: bold;
+}
+
+#hint {
+  display: block;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5vmin;
+  background: rgba(100,100,100,0.6);
+  color: #fff;
+  padding: 0.5em 1em;
+  position: fixed;
+  line-height: 140%;
+}
+
+#playername {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  top: 0;
+}
+
+b {
+  color: #000;
+}
+
+#play {
+  background: red;
+  color: #fff;
+}
+
+.hidden {
+  display: none !important;
+}
